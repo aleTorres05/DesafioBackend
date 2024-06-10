@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-const modelName = posts;
-
 const schema = new mongoose.Schema({
   title: {
     type: String,
@@ -13,7 +11,7 @@ const schema = new mongoose.Schema({
     type: String,
     required: false,
     minLength: 2,
-    maxLength: 100,
+    maxLength: 500,
   },
   body: {
     type: String,
@@ -34,4 +32,4 @@ const schema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model(modelName, schema);
+module.exports = mongoose.model("posts", schema);
