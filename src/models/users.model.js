@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-const modelName = koders;
-
 const schema = new mongoose.Schema({
   name: {
     type: String,
@@ -34,4 +32,4 @@ const schema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model(modelName, schema);
+module.exports = mongoose.model("users", schema);
