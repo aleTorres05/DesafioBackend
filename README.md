@@ -6,12 +6,19 @@ The Dev.to post management System is a robust backend solution developed using N
 
 - [@aleTorres05](hhttps://github.com/aleTorres05/)
 
-## Deployment
+## Run Locally
 
-Clone repo:
+Clone the project
 
 ```bash
 git clone git@github.com:aleTorres05/DesafioBackend.git
+
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
 ```
 
 Install Dependencies:
@@ -120,29 +127,3 @@ Technologies Used:
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
