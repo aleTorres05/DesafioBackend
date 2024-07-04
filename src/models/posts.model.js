@@ -36,6 +36,12 @@ const schema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  rating: {
+    type: Number,
+    default: function () {
+      return Math.round(Math.random() * 10 + 1);
+    },
+  },
 });
 
 module.exports = mongoose.model("posts", schema);
