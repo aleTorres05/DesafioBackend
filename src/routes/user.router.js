@@ -4,7 +4,7 @@ const auth = require("../middlewares/auth.middleware");
 
 const router = express.Router();
 
-router.get("/", auth, async (request, response) => {
+router.get("/", async (request, response) => {
   try {
     const users = await usersUseCase.getAll();
     response.json({
