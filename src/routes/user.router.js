@@ -20,7 +20,7 @@ router.get("/", auth, async (request, response) => {
   }
 });
 
-router.get("/:id", auth, async (request, response) => {
+router.get("/:id", async (request, response) => {
   try {
     const id = request.params.id;
     const user = await usersUseCase.getById(id);
